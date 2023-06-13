@@ -1,0 +1,8 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hyena_1" android:duration="100" />
+    <item android:drawable="@drawable/hyena_2" android:duration="100" />
+    <item android:drawable="@drawable/hyena_3" android:duration="100" />
+    <item android:drawable="@drawable/hyena_4" android:duration="100" />
+    <item android:drawable="@drawable/hyena_5" android:duration="100" />
+    <item android:drawable="@drawable/hyena_6" android:duration="100" />
+</animation-list>

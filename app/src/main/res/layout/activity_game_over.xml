@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1">
+
+    <TextView
+        android:id="@+id/coins_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Монеты: 0"
+        android:fontFamily="@font/one_font"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coins_text"
+        android:layout_alignStart="@+id/coins_text"
+        android:layout_alignEnd="@+id/coins_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:text="Очки: 0"
+        android:fontFamily="@font/one_font"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/score_text"
+        android:layout_alignStart="@+id/score_text"
+        android:layout_alignEnd="@+id/score_text"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="2dp"
+        android:background="@null"
+        android:src="@drawable/back_1" />
+
+    <ImageButton
+        android:id="@+id/replay_button"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_button"
+        android:layout_alignStart="@+id/home_button"
+        android:layout_alignEnd="@+id/home_button"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        app:srcCompat="@drawable/replay" />
+
+</RelativeLayout>

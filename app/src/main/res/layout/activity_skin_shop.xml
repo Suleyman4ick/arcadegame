@@ -1,0 +1,396 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    tools:context=".SkinShopActivity">
+
+    <TextView
+        android:id="@+id/coinsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="end|center_vertical"
+        android:fontFamily="@font/one_font"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:id="@+id/skinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coinsTextView"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <!-- Кнопка для первого скина -->
+            <ImageButton
+                android:id="@+id/defoltSkinButton"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hero_12" />
+
+            <!-- Имя первого скина -->
+            <TextView
+                android:id="@+id/defoltNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/defoltSkinButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Скин 0"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Стоимость первого скина -->
+            <TextView
+                android:id="@+id/defoltPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/defoltNameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:gravity="center"
+                android:text="Куплено"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <!-- Кнопка для первого скина -->
+            <ImageButton
+                android:id="@+id/skin1Button"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hero_31" />
+
+            <!-- Имя первого скина -->
+            <TextView
+                android:id="@+id/skin1NameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin1Button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Скин 1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Стоимость первого скина -->
+            <TextView
+                android:id="@+id/skin1PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin1NameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:gravity="center"
+                android:text="10 монет"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skin1SelectionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin1PriceTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Выбрано"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Кнопка для второго скина -->
+            <ImageButton
+                android:id="@+id/skin2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hero_21" />
+
+            <!-- Имя второго скина -->
+            <TextView
+                android:id="@+id/skin2NameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin2Button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Скин 2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Стоимость второго скина -->
+            <TextView
+                android:id="@+id/skin2PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin2NameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:gravity="center"
+                android:text="15 монет"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skin2SelectionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin2PriceTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Выбрано"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!-- Добавленные кнопки и текстовые поля для двух новых скинов -->
+        <RelativeLayout
+            android:layout_width="128dp"
+            android:layout_height="wrap_content">
+
+            <!-- Кнопка для третьего скина -->
+
+            <!-- Имя третьего скина -->
+
+            <ImageButton
+                android:id="@+id/skin3Button"
+                android:layout_width="97dp"
+                android:layout_height="128dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hero_8" />
+
+            <!-- Стоимость третьего скина -->
+            <TextView
+                android:id="@+id/skin3NameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin3Button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="19dp"
+                android:fontFamily="@font/one_font"
+                android:text="Скин 3"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skin3PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin3NameTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/one_font"
+                android:gravity="center"
+                android:text="20 монет"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skin3SelectionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin3PriceTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Выбрано"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="131dp"
+            android:layout_height="wrap_content">
+
+            <!-- Кнопка для четвертого скина -->
+
+            <!-- Имя четвертого скина -->
+
+            <ImageButton
+                android:id="@+id/skin4Button"
+                android:layout_width="86dp"
+                android:layout_height="128dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="14dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hero_9" />
+
+            <!-- Стоимость четвертого скина -->
+            <TextView
+                android:id="@+id/skin4NameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin4Button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="@font/one_font"
+                android:text="Скин 4"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skin4PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin4NameTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/one_font"
+                android:gravity="center"
+                android:text="25 монет"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skin4SelectionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skin4PriceTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/one_font"
+                android:text="Выбрано"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginEnd="442dp"
+        android:layout_marginBottom="61dp"
+        android:fontFamily="@font/one_font"
+        android:text="Надеть" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="317dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/one_font"
+        android:text="Надеть" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="456dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/one_font"
+        android:text="Надеть" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="588dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/one_font"
+        android:text="Надеть" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="571dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/one_font"
+        android:text="Надеть"
+        android:typeface="serif" />
+
+
+</RelativeLayout>

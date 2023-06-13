@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/coin_1" android:duration="100" />
+    <item android:drawable="@drawable/coin_2" android:duration="100" />
+    <item android:drawable="@drawable/coin_3" android:duration="100" />
+    <item android:drawable="@drawable/coin_4" android:duration="100" />
+    <item android:drawable="@drawable/coin_5" android:duration="100" />
+    <item android:drawable="@drawable/coin_6" android:duration="100" />
+    <item android:drawable="@drawable/coin_7" android:duration="100" />
+    <item android:drawable="@drawable/coin_8" android:duration="100" />
+    <item android:drawable="@drawable/coin_9" android:duration="100" />
+    <!-- Добавьте больше кадров по мере необходимости -->
+</animation-list>
